@@ -7,3 +7,13 @@ function a_to_ch(ch){
   console.log(newResult);
 }
 a_to_ch();
+
+
+function assi(a){
+  var arr=[];
+  for(var i=0;i<a.length;i++){
+    arr.push(a.codePointAt(i));
+  }
+  console.log(arr.join(''));
+}
+assi('abc');
