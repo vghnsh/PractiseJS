@@ -1,9 +1,16 @@
-Array.prototype.mymap = function () {
-  let newA = [];
-  for (var i = 0; i < arr.length; i++) {
-    newA.push(arr[i]+1);
+arr = [0, 1, 2, 3, 4];
+
+//arr.forEach((e1,i)=>console.log(e1,i));
+
+Array.prototype.myMap = function (n) {
+  let arr1 = [];
+  for (let i = 0; i < this.length; i++) {
+    arr1.push(n(this[i], i, this));
   }
-  return newA;
+  return arr1;
 };
-var arr = [1, 2, 3, 4];
-console.log(arr.mymap((m1) => m1));
+
+var callme = arr.myMap(function (n) {
+  return n;
+});
+console.log(callme);
