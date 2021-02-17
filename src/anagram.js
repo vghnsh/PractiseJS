@@ -3,4 +3,4 @@ function take(a, b) {
   let d = b.toLowerCase().split("").sort().join("");
   return c === d;
 }
-console.log(take("sleep", "speel"));
+console.log(take("mar", "RAm"));
