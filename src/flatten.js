@@ -11,5 +11,10 @@ function flatten(arr){
   return newArr;
 }
 
-flatten([[1, 2, 3], [4, 5]]); // [1, 2, 3, 4, 5]
-flatten([[[1, [1.1]], 2, 3], [4, 5]]); // [1, 1.1, 2, 3, 4, 5]
+
+console.log([[1, 2, 3], [4, 5]].reduce(function(flat, current) {
+  return flat.concat(current);
+}, []));
+
+console.log(flatten([[1, 2, 3], [4, 5]])); // [1, 2, 3, 4, 5]
+console.log(flatten([[[1, [1.1]], 2, 3], [4, 5]])); // [1, 1.1, 2, 3, 4, 5]
