@@ -13,3 +13,13 @@ function fibo(n) {
   }
 }
 fibo(4);
+
+
+// function fib(n,arr=[],third,first=0,second=1){
+//   if(n){
+//     return fib(n-1,arr.concat(first),third=first+second,first=second,second=third)
+//   }
+//   return arr;
+// }
+// fib(5)
+
